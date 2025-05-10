@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Drag Scroll</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="relative w-[80vw] overflow-hidden">
+        <div id="scrollContainer" class="flex  space-x-4 cursor-grab active:cursor-grabbing select-none overflow-hidden">
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/200" class="w-48 h-48 object-cover rounded-lg" />
+        </div>
+    </div>
+    
+    <script>
+        const scrollContainer = document.getElementById("scrollContainer");
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        scrollContainer.addEventListener("mousedown", (e) => {
+            isDown = true;
+            scrollContainer.classList.add("active");
+            startX = e.pageX - scrollContainer.offsetLeft;
+            scrollLeft = scrollContainer.scrollLeft;
+        });
+
+        scrollContainer.addEventListener("mouseleave", () => {
+            isDown = false;
+            scrollContainer.classList.remove("active");
+        });
+
+        scrollContainer.addEventListener("mouseup", () => {
+            isDown = false;
+            scrollContainer.classList.remove("active");
+        });
+
+        scrollContainer.addEventListener("mousemove", (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollContainer.offsetLeft;
+            const walk = (x - startX) * 2; // kecepatan scroll
+            scrollContainer.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body>
+</html>

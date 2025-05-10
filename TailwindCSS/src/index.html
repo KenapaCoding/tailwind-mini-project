@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Card Hover Effect</title>
+</head>
+<body class="bg-[#fff] flex flex-col min-h-screen">
+  <div class="mx-4 xl:mx-20 my-10">
+    <h1 class=" text-black text-3xl font-black text-center ">Card Hover Effect</h1>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 mx-4 xl:mx-20 my-10">
+    <!-- Card 1 -->
+    <div class="relative group bg-gradient-to-b from-purple-700 to-purple-900 rounded-xl overflow-hidden h-64">
+      <img src="https://images.unsplash.com/photo-1736481637082-24ef8e9e2ff6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2lzYXRhJTIwc3VtYXRlcmElMjBiYXJhdHxlbnwwfDB8Mnx8fDI%3D" alt="Fitpass" class="object-cover w-full h-full transition-transform duration-500">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+        <p class="text-white text-lg font-bold mb-4">Pantai Pink (Pink Beach)</p>
+        <p class="text-white text-md mb-4 text-center p-2">Terletak di kawasan Taman Nasional Komodo, Pantai Pink terkenal dengan pasirnya yang berwarna merah muda, hasil perpaduan antara pasir putih dan pecahan karang merah.</p>
+        <button
+          class="w-10 h-10 text-white rounded-full flex items-center justify-center transform transition-all duration-500 hover:scale-110 hover:bg-cyan-500">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff" stroke="white" stroke-width="50"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative group bg-gradient-to-b from-pink-700 to-purple-900 rounded-xl overflow-hidden h-64">
+      <img src="https://media.istockphoto.com/id/185221597/photo/indonesia-west-sumatra-province-mentawai-islands-tropical-island.webp?a=1&b=1&s=612x612&w=0&k=20&c=pHJYOv9wZSGxD8D831l7aEnhq5LokU3XQr9Hjg-s3vk=" alt="Star Training" class="object-cover w-full h-full transition-transform duration-500">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+        <p class="text-white text-lg font-bold mb-4">Mentawai</p>
+        <p class="text-white text-md mb-4 text-center p-2">Mentawai memiliki beberapa spot surfing terbaik di dunia, seperti Lance’s Right, Macaronis, dan Bankvaults. Ombaknya tinggi dan konsisten, menarik peselancar dari berbagai negara.</p>
+        <button
+          class="w-10 h-10 text-white rounded-full flex items-center justify-center transform transition-all duration-500 hover:scale-110 hover:bg-cyan-500">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff" stroke="white" stroke-width="50"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative group bg-gradient-to-b from-blue-700 to-purple-900 rounded-xl overflow-hidden h-64">
+      <img src="https://images.unsplash.com/photo-1736481637003-a64f57dc481f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2lzYXRhJTIwc3VtYXRlcmElMjBiYXJhdHxlbnwwfDB8Mnx8fDI%3D" alt="Pantai Mberenang" class="object-cover w-full h-full transition-transform duration-500">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+        <p class="text-white text-lg font-bold mb-4">Pantai Mberenang</p>
+        <p class="text-white text-md mb-4 text-center p-2">Pantai Mberenang memungkinkan pengunjung untuk menikmati keindahan bawah laut. Pantai ini menjadi salah satu destinasi yang menarik bagi para pecinta snorkeling.</p>
+        <button
+          class="w-10 h-10 text-white rounded-full flex items-center justify-center transform transition-all duration-500 hover:scale-110 hover:bg-cyan-500">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff" stroke="white" stroke-width="50"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

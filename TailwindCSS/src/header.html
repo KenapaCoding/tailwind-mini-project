@@ -1,0 +1,157 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+            @theme {
+              --color-clifford: #da373d;
+            }
+          </style>
+	</head>
+	<body>
+		<section class=" h-[calc(200vh)] bg-cover bg-center px-4 py-5 lg:px-20">
+			<header id="header" class="overflow-hidden relative bg-blue-500">
+				<div class="p-6 flex items-center justify-between">
+					<h1 class="text-4xl font-bold transition-all hover:scale-110">
+						Visit<span class="text-red-600">Indonesia</span>
+					</h1>
+					<button
+						id="menu-toggle"
+						class="lg:hidden relative z-20 w-6 h-6 flex flex-col items-center justify-center">
+						<!-- Hamburger Icon -->
+						<span
+							class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center"
+							id="line1"></span>
+						<span
+							class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center mt-1.5"
+							id="line2"></span>
+						<span
+							class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center mt-1.5"
+							id="line3"></span>
+					</button>
+					<nav
+						id="navbar"
+						class="hidden lg:flex space-x-6 text-sm uppercase font-medium">
+						<ul class="flex space-x-6">
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Events</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Products</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Support</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Mobile Menu -->
+				<div
+					id="mobile-menu"
+					class="fixed inset-0 bg-black bg-opacity-75 py-12  z-10 hidden">
+					<div class="text-white p-8 flex justify-center items-center w-full">
+						<ul class="space-y-6 text-center text-lg">
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Careers</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Events</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Products</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+									>Support</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</header>
+
+			<!-- Hero Section -->
+		</section>
+        <script>
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const header = document.getElementById("header");
+            const line1 = document.getElementById("line1");
+            const line2 = document.getElementById("line2");
+            const line3 = document.getElementById("line3");
+        
+            menuToggle.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+              document.body.classList.toggle("overflow-hidden")
+
+        
+              // Add rotation and opacity effects for lines
+              line1.classList.toggle("-rotate-[135deg]");
+              line1.classList.toggle("translate-y-2");
+        
+              line2.classList.toggle("opacity-0");
+        
+              line3.classList.toggle("rotate-[315deg]");
+              line3.classList.toggle("-translate-y-2");
+            });
+        </script>
+	</body>
+</html>
+
+

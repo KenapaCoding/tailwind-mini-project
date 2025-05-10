@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white h-screen flex flex-col">
+    <h1 class="text-red-500 text-4xl font-bold flex-1">hello world!</h1>
+    <footer class="text-white flex flex-col md:flex-row justify-between items-center p-6 md:py-10 md:px-20 bg-black" >
+        <div class="text-center md:text-left">
+            <h1 class="text-3xl font-bold">Visit<span class="text-red-500">Indonesia</span></h1>
+            <nav class="mt-2 md:mt-4">
+                <ul class="flex flex-col md:flex-row gap-0 md:gap-2 text-gray-300">
+                    <li>
+                        <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Events</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Supports</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div  class="text-center md:text-right mt-6 md:mt-0">
+            <ul class="flex justify-center md:justify-end gap-4">
+                <li>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536559.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                    </a>
+                </li>
+            </ul>
+            <p class="text-gray-400 text-sm mt-5">
+                &copy; 2025 VisitIndonesia. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

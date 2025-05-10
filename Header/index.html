@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-main-header: #000;
+        }
+      </style>
+</head>
+<body>
+    <section class="h-[200vh] ">
+        <header class="bg-white border-b">
+            <div class="p-6 flex items-center justify-between">
+                <!-- icon -->
+                 <h1 class="text-4xl font-bold hover:scale-110 transition duration-500">
+                    Visit<span class="text-red-600">Indonesia</span>
+                 </h1>
+                 <nav id="navbar" class="hidden lg:flex text-sm uppercase font-semibold">
+                    <ul class=" flex space-x-6">
+                        <li>
+                            <a class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                                Supports
+                            </a>
+                        </li>
+                    </ul>
+
+                 </nav>
+                 <button id="menu-toggle" class="lg:hidden relative z-20 w-6 h-6 flex flex-col items-center justify-center gap-1.5">
+                    <span class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500" id="line1"></span>
+                    <span class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500" id="line2"></span>
+                    <span class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500" id="line3"></span>     
+                 </button>
+            </div>
+            <div
+            id="mobile-menu"
+            class="fixed inset-0 bg-black/90 py-12 z-10 hidden">
+           
+                <ul class="p-8 w-full space-y-6 text-center">
+                    <li>
+                        <a class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500" href="#about">
+                            Supports
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle")
+        const mobileMenu = document.getElementById("mobile-menu")
+        const line1 = document.getElementById("line1")
+        const line2 = document.getElementById("line2")
+        const line3 = document.getElementById("line3")
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden")
+            document.body.classList.toggle("overflow-hidden")
+
+
+            line1.classList.toggle("bg-white")
+            line1.classList.toggle("-rotate-[135deg]")
+            line1.classList.toggle("translate-y-2")
+
+            line2.classList.toggle("bg-white")
+            line2.classList.toggle("opacity-0")
+
+            line3.classList.toggle("bg-white")
+            line3.classList.toggle("rotate-[315deg]")
+            line3.classList.toggle("-translate-y-2")
+        })
+    </script>
+</body>
+</html>

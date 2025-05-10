@@ -1,0 +1,722 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Loopstudios</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	</head>
+	<body class=" text-white ">
+		<section
+			class=" min-h-[calc(100vh)] bg-[url('./assets/images.jpg')] bg-cover bg-center px-4 py-5 lg:px-20 flex flex-col">
+			<header class="p-6 flex items-center justify-between">
+				<h1 class="text-4xl font-bold transition-all hover:scale-110">
+					Visit<span class="text-red-600">Indonesia</span>
+				</h1>
+				<button
+					id="menu-toggle"
+					class="lg:hidden relative z-20 w-6 h-6 flex flex-col items-center justify-center">
+					<!-- Hamburger Icon -->
+					<span
+						class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center"
+						id="line1"></span>
+					<span
+						class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center mt-1.5"
+						id="line2"></span>
+					<span
+						class="w-full h-0.5 bg-white transform transition-transform duration-500 origin-center mt-1.5"
+						id="line3"></span>
+				</button>
+				<nav
+					id="navbar"
+					class="hidden lg:flex space-x-6 text-sm uppercase font-medium">
+					<ul class="flex space-x-6">
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Careers</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Support</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Mobile Menu -->
+			<div
+				id="mobile-menu"
+				class=" fixed inset-0 bg-black bg-opacity-75 py-12  z-10 hidden">
+				<div class="text-white p-8 flex justify-center items-center w-full">
+					<ul class="space-y-6 text-center text-lg">
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Careers</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:scale-125 inline-block font-bold text-white text-lg transition-all duration-500 hover:text-red-500"
+								>Support</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex w-full flex-1 justify-evenly items-center">
+				<div
+					class="flex items-center bg-black/50 rounded-2xl p-8 md:p-20 justify-center text-center">
+					<div class="relative">
+						<h2 class="text-2xl md:text-4xl font-bold">
+							Jelajahi Keindahan <span class="text-red-500">Indonesia</span>
+						</h2>
+						<p class="max-w-lg mx-auto mt-3 text-xs md:text-sm">
+							Temukan surga tropis dengan pantai eksotis, budaya yang kaya, dan
+							kuliner lezat. Dari Bali hingga Raja Ampat, Indonesia menawarkan
+							petualangan yang tak terlupakan!
+						</p>
+						<button
+							class="mt-5 bg-red-500 px-6 py-2 rounded-md hover:bg-red-600">
+							JELAJAHI SEKARANG
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hero Section -->
+		</section>
+		<section
+			class="bg-white text-black my-4 md:my-0  mx-4 xl:mx-20  min-h-screen flex items-center">
+			<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+				<!-- Gambar -->
+				<div class="rounded-lg overflow-hidden shadow-lg md:w-1/2">
+					<img
+						src="./assets/images-web.jpg"
+						alt="Training Image"
+						class="w-full" />
+				</div>
+
+				<!-- Konten -->
+				<div class="md:w-1/2 text-center md:text-left">
+					<h2 class="text-2xl md:text-4xl font-extrabold uppercase leading-tight text-black border-red-500 border-b-3">
+						Explore the Wonders of Indonesia
+					</h2>
+					<p class="mt-4 text-gray-700 text-xs md:text-lg">
+						Indonesia, the world's largest archipelago with over 17,000 islands, offers breathtaking landscapes, vibrant cultures, and unforgettable experiences. From the pristine beaches of Bali and the lush green mountains of Sumatra to the mesmerizing underwater paradise of Raja Ampat, every corner of Indonesia is waiting to be discovered. Experience the warmth of the locals, indulge in mouthwatering traditional cuisine, and embark on thrilling adventures that will create lifelong memories.
+					</p>
+					<p class="mt-2 text-gray-700 text-xs md:text-lg">
+						Whether you're a nature lover, history enthusiast, or adventure seeker, Indonesia has something special for you. Don’t wait—start your journey to explore the beauty and culture of Indonesia today!
+					</p>
+					<button class="mt-6 px-6 text-center md:text-left py-3 bg-red-600 text-white font-semibold text-lg rounded-full hover:bg-red-700 transition cursor-pointer">
+						PLAN YOUR TRIP NOW <span class="ml-2"></span>
+					</button>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="min-h-screen flex flex-col justify-center mt-5">
+			<h1 class="mx-4 my-5 lg:mx-20 text-4xl font-bold text-black">
+				Card Hover Effect
+			</h1>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 my-10 lg:mx-20 ">
+				<!--Card 1-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb25lc2lhJTIwc2VhfGVufDB8fDB8fHww"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-active:translate-y-0 group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Raja Ampat</p>
+						<p class="text-md mb-4 text-center p-2">
+							Raja Ampat adalah gugusan kepulauan di Provinsi Papua Barat Daya,
+							Indonesia. Kepulauan ini terkenal sebagai surga bagi para penyelam
+							dan pecinta petualangan.
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!--Card 2-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://plus.unsplash.com/premium_photo-1663954865003-43333b9d5925?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kb25lc2lhJTIwc2VhfGVufDB8fDB8fHww"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Pulau Bali</p>
+						<p class="text-md mb-4 text-center p-2">
+							Pulau Bali adalah sebuah provinsi di Indonesia yang terkenal
+							dengan keindahan pantainya, budaya, dan seni. Pulau ini juga
+							dikenal sebagai Pulau Dewata atau Pura Seribu
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!--Card 3-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://images.unsplash.com/photo-1736481637456-15905fc543f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Pantai Pink</p>
+						<p class="text-md mb-4 text-center p-2">
+							Pink Beach atau Pantai Pink adalah pantai yang memiliki pasir
+							berwarna merah muda. Pantai ini terletak di Pulau Komodo, Labuan
+							Bajo, Nusa Tenggara Timur.
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!--Card 4-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://plus.unsplash.com/premium_photo-1668883189361-9c754861dbd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVsYXUlMjBrb21vZG98ZW58MHx8MHx8fDA%3D"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Nusa Penida</p>
+						<p class="text-md mb-4 text-center p-2">
+							Nusa Penida adalah sebuah pulau kecil di Kabupaten Klungkung,
+							Bali, Indonesia. Pulau ini merupakan bagian dari gugus kepulauan
+							Nusa Lembongan-Nusa Ceningan-Nusa Penida.
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!--Card 5-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://images.unsplash.com/photo-1607427225127-a4ae1d4b050c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Pulau Padar</p>
+						<p class="text-md mb-4 text-center p-2">
+							Pulau Padar adalah pulau terbesar ketiga di Taman Nasional Komodo,
+							Nusa Tenggara Timur (NTT). Pulau ini merupakan destinasi wisata
+							yang populer bagi pencinta alam dan petualang
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!--Card 6-->
+				<div
+					class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+					<img
+						src="https://images.unsplash.com/photo-1717238978594-f0a29054308f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww"
+						alt="Raja Ampat"
+						class="w-full h-full object-cover transition-transform duration-500" />
+					<div
+						class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+						<p class=" text-lg font-bold mb-4">Pulau Komodo</p>
+						<p class="text-md mb-4 text-center p-2">
+							Pulau Komodo adalah pulau yang terletak di Kepulauan Nusa
+							Tenggara, Indonesia. Pulau ini merupakan salah satu pulau utama di
+							Taman Nasional Komodo.
+						</p>
+						<button
+							class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								width="24"
+								viewBox="0 0 448 512">
+								<path
+									fill="#ffffff"
+									d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white min-h-[calc(100vh)] flex items-center">
+			<div
+				class=" grid grid-cols-1 xl:grid-cols-3  w-full gap-6 mx-4 lg:mx-20 xl:place-items-center">
+				<!-- Bagian Kiri -->
+				<div>
+					<h2
+						class="text-5xl font-extrabold uppercase leading-tight text-black">
+						All-Star <br />
+						Essentials
+					</h2>
+					<p class="text-lg mt-4 text-gray-700">
+						Why settle for boring workouts when you can party with us? <br />
+						Have fun while you work it!
+					</p>
+					<button
+						class="mt-6 px-6 py-3 bg-red-600 text-white font-semibold text-lg rounded-full flex items-center hover:bg-red-700 transition">
+						JOIN US NOW <span class="ml-2">↗</span>
+					</button>
+				</div>
+
+				<!-- Bagian Kanan -->
+				<div class="grid md:grid-cols-3 gap-6 xl:col-span-2">
+					<!-- Card 1 -->
+					<!-- Budget Package -->
+					<div
+						class="bg-white text-black p-8 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 lg:h-96 flex flex-col justify-center items-center gap-3">
+						<h2 class="text-xl font-semibold">BUDGET</h2>
+						<p class="text-5xl font-bold mt-2">3 Days</p>
+						<p class="text-gray-400 mt-2">$299/Person</p>
+						<button
+							class=" mt-4 px-6 py-2 font-semibold border border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition">
+							Book Now
+						</button>
+						<div class="mt-6 text-gray-400 text-sm">
+							<p>&#10003; Economy hotel stay</p>
+							<p>&#10003; Guided city tour</p>
+							<p>&#10003; Free breakfast</p>
+						</div>
+					</div>
+
+					<!-- Standard Package -->
+					<div
+						class="bg-white text-black p-8 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 lg:h-96 flex flex-col justify-center items-center gap-3">
+						<h2 class="text-xl font-semibold">STANDARD</h2>
+						<p class="text-5xl font-bold mt-2">5 Days</p>
+						<p class="text-gray-400 mt-2">$599/Person</p>
+						<button
+							class="mt-4 px-6 py-2 border font-semibold border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition">
+							Book Now
+						</button>
+						<div class="mt-6 text-gray-400 text-sm">
+							<p>&#10003; 4-star hotel stay</p>
+							<p>&#10003; Guided city and adventure tour</p>
+							<p>&#10003; Breakfast & dinner included</p>
+						</div>
+					</div>
+
+					<!-- Luxury Package -->
+					<div
+						class="bg-white text-black p-8 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 lg:h-96 flex flex-col justify-center items-center gap-3">
+						<h2 class="text-xl font-semibold">LUXURY</h2>
+						<p class="text-5xl font-bold mt-2">7 Days</p>
+						<p class="text-gray-400 mt-2">$999/Person</p>
+						<button
+							class="mt-4 px-6 py-2 border font-semibold border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition">
+							Book Now
+						</button>
+						<div class="mt-6 text-gray-400 text-sm">
+							<p>&#10003; 5-star resort stay</p>
+							<p>&#10003; Private guided tours</p>
+							<p>&#10003; All meals included</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div
+			class="bg-gray-600 text-white text-center py-16 px-6 w-full my-4 md:my-0">
+			<p class="text-sm uppercase tracking-wide font-black">
+				35,000+ Already Joined
+			</p>
+			<h2 class="text-2xl md:text-4xl font-bold mt-2">
+				Stay up-to-date with what we're doing
+			</h2>
+			<div
+				class="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+				<input
+					type="email"
+					placeholder="Enter your email address"
+					class="px-4 py-3 w-72 text-gray-700 rounded-md focus:outline-none" />
+				<button
+					class="bg-red-500 px-6 py-3 text-white font-semibold rounded-md hover:bg-red-600">
+					Subscribe
+				</button>
+			</div>
+		</div>
+		<section class="bg-gray-100 py-12 px-6 flex flex-col items-center">
+			<h2
+				class="text-4xl m-4 mb-10 text-black font-bold border-red-600 border-b-4 p-4 hover:bg-red-600 rounded-lg transition-all duration-500 cursor-pointer hover:text-white shadow-xl">
+				Testimonials
+			</h2>
+			<div class="mx-4 my-5 lg:mx-20 grid gap-6 grid-cols-1 lg:grid-cols-5">
+				<!-- Card 1 -->
+				<div
+					class="bg-red-600 text-white p-6 rounded-lg hover:scale-105 transition-all duration-500 hover:shadow-xl lg:col-span-3">
+					<h3 class="font-bold text-lg">Daniel Clifford</h3>
+					<p class="text-sm opacity-75">Verified Graduate</p>
+					<p class="mt-4 font-semibold">
+						I received a job offer mid-course, and the subjects I learned were
+						current...
+					</p>
+					<p class="mt-2 text-sm opacity-90">
+						"Bali is truly a paradise on Earth! From the stunning beaches of
+						Seminyak and Nusa Dua to the cultural richness of Ubud, every part
+						of this island is mesmerizing. The rice terraces in Tegallalang were
+						absolutely breathtaking, and the spiritual atmosphere at Uluwatu
+						Temple during sunset was something I’ll never forget. I also enjoyed
+						the delicious Balinese cuisine, especially the Babi Guling and Nasi
+						Campur. The locals are incredibly friendly, and the hospitality is
+						top-notch. Whether you're into adventure, relaxation, or culture,
+						Bali has something for everyone!"
+					</p>
+				</div>
+
+				<!-- Card 2 -->
+				<div
+					class="bg-yellow-800 text-white p-6 rounded-lg hover:scale-105 transition-all duration-500 hover:shadow-xl">
+					<h3 class="font-bold text-lg">Jonathan Walters</h3>
+					<p class="text-sm opacity-75">Verified Graduate</p>
+					<p class="mt-4 font-semibold">
+						The team was very supportive and kept me motivated
+					</p>
+					<p class="mt-2 text-sm opacity-90">
+						"I started as a total newbie with virtually no coding skills..."
+					</p>
+				</div>
+
+				<!-- Card 3 -->
+				<div
+					class="bg-green-600 text-white p-6 rounded-lg hover:scale-105 transition-all duration-500 hover:shadow-xl border lg:row-span-2">
+					<h3 class="font-bold text-lg">Kira Whittle</h3>
+					<p class="text-sm opacity-75">Verified Graduate</p>
+					<p class="mt-4 font-semibold">
+						Such a life-changing experience. Highly recommended!
+					</p>
+					<p class="mt-2 text-sm opacity-90">
+						"If you're a surfer, Mentawai Islands should be on your bucket list!
+						The waves here are world-class, making it a dream destination for
+						anyone passionate about surfing. The remote location adds to the
+						charm, as you get to experience a truly untouched paradise. The
+						local Mentawai people have a fascinating culture, and it was amazing
+						to learn about their traditions and way of life. The journey to get
+						here was quite long and challenging, but once I arrived, I realized
+						it was worth every effort. However, be prepared for limited modern
+						facilities—this is an adventure, not a luxury trip"
+					</p>
+				</div>
+
+				<!-- Card 4 -->
+				<div
+					class="bg-white text-gray-900 p-6 rounded-lg border hover:scale-105 transition-all duration-500 hover:shadow-xl">
+					<h3 class="font-bold text-lg">Jeanette Harmon</h3>
+					<p class="text-sm opacity-75">Verified Graduate</p>
+					<p class="mt-4 font-semibold">
+						An overall wonderful and rewarding experience
+					</p>
+					<p class="mt-2 text-sm opacity-90">
+						"Thank you for the wonderful experience! I now have a job I really
+						enjoy..."
+					</p>
+				</div>
+
+				<!-- Card 5 -->
+				<div
+					class="bg-blue-900 text-white p-6 rounded-lg lg:col-span-3 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+					<h3 class="font-bold text-lg">Patrick Abrams</h3>
+					<p class="text-sm opacity-75">Visited: July 2023</p>
+					<p class="mt-4 font-semibold">
+						Awesome teaching support from TAs who did the bootcamp themselves
+					</p>
+					<p class="mt-2 text-sm opacity-90">
+						"Watching the sunrise over Mount Bromo was one of the most magical
+						experiences of my life. The journey started early in the morning,
+						with a jeep ride through the Sea of Sand under a starry sky. When we
+						reached the viewpoint, the first light of day slowly revealed the
+						breathtaking landscape of Mount Bromo, with Mount Semeru in the
+						background. The hike to the crater was both thrilling and
+						challenging, but the view from the top was worth every step. The
+						sulfur smoke rising from the crater made the experience even more
+						surreal. If you love adventure and nature, Bromo is a must-visit!"
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="group flex gap-0">
+			<!-- Button -->
+			<button
+				class="w-24 h-12 fixed -right-6 top-1/2 -translate-y-1/2 transition-transform duration-700 bg-red-600 text-white -rotate-90 font-semibold rounded-t-lg group-hover:-translate-x-[384px] group-hover:top-1/2 hover:opacity-60">
+				Open Form
+			</button>
+
+			<!-- Form Container -->
+			<div
+				class="w-96 bg-[#2b093b] text-white p-6 rounded-lg fixed top-1/2 right-0 -translate-y-1/2 translate-x-full transition-transform duration-700 group-hover:translate-x-0">
+				<h2 class="text-lg font-bold mb-2">
+					TRY US <span class="text-red-600">FOR FREE</span>
+				</h2>
+				<p class="text-sm text-gray-300 mb-4">
+					Get an exclusive free trial experience.
+				</p>
+
+				<form>
+					<label class="block text-xs font-semibold">FIRST NAME</label>
+					<input
+						type="text"
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3"
+						placeholder="Enter First Name" />
+
+					<label class="block text-xs font-semibold">LAST NAME</label>
+					<input
+						type="text"
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3"
+						placeholder="Enter Last Name" />
+
+					<label class="block text-xs font-semibold">EMAIL ADDRESS</label>
+					<input
+						type="email"
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3"
+						placeholder="example@gmail.com" />
+
+					<label class="block text-xs font-semibold">PHONE NUMBER</label>
+					<input
+						type="tel"
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3"
+						placeholder="+62 1234567890" />
+
+					<label class="block text-xs font-semibold">PREFERRED CLUB</label>
+					<select
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3">
+						<option>Please select</option>
+					</select>
+
+					<label class="block text-xs font-semibold">CONTACT HOURS</label>
+					<select
+						class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3">
+						<option>Please select</option>
+					</select>
+
+					<button
+						class="w-full bg-red-600 text-white font-bold py-2 rounded mt-3 transition-opacity hover:opacity-80">
+						SUBMIT
+					</button>
+				</form>
+			</div>
+		</section>
+		<footer
+			class="flex flex-col md:flex-row justify-between items-center p-6 md:p-10 md:px-20 bg-black">
+			<div class="text-center md:text-left">
+				<h1 class="text-3xl font-bold">loopstudios</h1>
+				<nav class="mt-4">
+					<ul
+						class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-gray-300">
+						<li>
+							<a
+								href="#"
+								class="hover:text-white"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:text-white"
+								>Careers</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:text-white"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:text-white"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="hover:text-white"
+								>Support</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mt-6 md:mt-0 text-center md:text-right">
+				<div class="flex justify-center md:justify-end space-x-4">
+					<a
+						href="#"
+						class="hover:opacity-75"
+						><img
+							src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+							alt="Facebook"
+							class="w-6"
+					/></a>
+					<a
+						href="#"
+						class="hover:opacity-75"
+						><img
+							src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+							alt="Twitter"
+							class="w-6"
+					/></a>
+					<a
+						href="#"
+						class="hover:opacity-75"
+						><img
+							src="https://cdn-icons-png.flaticon.com/512/145/145808.png"
+							alt="Pinterest"
+							class="w-6"
+					/></a>
+					<a
+						href="#"
+						class="hover:opacity-75"
+						><img
+							src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+							alt="Instagram"
+							class="w-6"
+					/></a>
+				</div>
+				<p class="text-gray-400 text-sm mt-4">
+					&copy; 2022 Loopstudios. All Rights Reserved
+				</p>
+			</div>
+		</footer>
+
+		<!-- Navbar -->
+
+		<!-- Scripts for menu toggle -->
+		<script>
+			const menuToggle = document.getElementById("menu-toggle");
+			const mobileMenu = document.getElementById("mobile-menu");
+			const line1 = document.getElementById("line1");
+			const line2 = document.getElementById("line2");
+			const line3 = document.getElementById("line3");
+
+			menuToggle.addEventListener("click", () => {
+			  mobileMenu.classList.toggle("hidden");
+
+			  // Add rotation and opacity effects for lines
+			  line1.classList.toggle("-rotate-[135deg]");
+			  line1.classList.toggle("translate-y-2");
+
+			  line2.classList.toggle("opacity-0");
+
+			  line3.classList.toggle("rotate-[315deg]");
+			  line3.classList.toggle("-translate-y-2");
+			});
+		</script>
+	</body>
+</html>

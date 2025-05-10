@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1a0017] min-h-screen flex items-center">
+    <section class="h-[2000px]"></section>
+    <div class="group flex gap-0">
+        <button class="w-24 h-12 -rotate-90 fixed -right-4 top-1/2 text-white -translate-y-1/2 bg-red-500 font-semibold rounded-t-lg group-hover:-translate-x-[384px] transition-transform duration-700">
+            Open Form
+        </button>
+        <div class="w-96 bg-[#2b093b] text-white p-6 rounded-lg fixed top-1/2 right-0 -translate-y-1/2 translate-x-full group-hover:translate-x-0 transition-transform duration-700">
+            <h2 class="text-lg font-bold mb-2">TRY US <span class="text-red-500">LIKE HOLIDAY IN HEAVEN</span></h2>
+            <p class="text-sm text-gray-300 mb-4">Get an exclusive tour experience</p>
+
+            <form>
+                <label class="block text-xs font-semibold mb-2">FIRST NAME</label>
+                <input type="text" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3" placeholder="Enter First Name">
+
+                <label class="block text-xs font-semibold mb-2">LAST NAME</label>
+                <input type="text" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3" placeholder="Enter Last Name">
+
+                <label class="block text-xs font-semibold mb-2">EMAIL ADDRESS</label>
+                <input type="email" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3" placeholder="example@gmail.com">
+
+                <label class="block text-xs font-semibold mb-2">PHONE NUMBER</label>
+                <input type="tel" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3" placeholder="+62 85319008722">
+
+                <label class="block text-xs font-semibold mb-2">COUNTRY</label>
+                <select type="text" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3" placeholder="Enter First Name">
+                    <option value="">Please Select</option>
+                </select>   
+                <button class="w-full bg-red-600 font-bold py-2 rounded mt-3 hover:opacity-80 transition-opacity duration-500">SUBMIT</button> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

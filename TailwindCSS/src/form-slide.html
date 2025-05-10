@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1a0127] min-h-screen flex items-center">
+   <div class="h-[2000px]"></div>
+    <!-- Wrapper dengan group -->
+    <section class="group flex gap-0">
+        <!-- Button -->
+        <button class="w-24 h-12 fixed -right-4 top-1/2 -translate-y-1/2 transition-transform duration-700 bg-red-600 text-white -rotate-90 font-semibold rounded-t-lg group-hover:-translate-x-[384px] group-hover:top-1/2 hover:opacity-60">
+            Open Form
+        </button>
+       
+        <!-- Form Container -->
+        <div class="w-96 bg-[#2b093b] text-white p-6 rounded-lg fixed top-1/2 right-0 -translate-y-1/2 translate-x-full transition-transform duration-700 group-hover:translate-x-0">
+            <h2 class="text-lg font-bold mb-2">TRY US <span class="text-red-600">LIKE HOLIDAY IN HEAVEN</span></h2>
+            <p class="text-sm text-gray-300 mb-4">Get an exclusive vacation experience.</p>
+
+            <form>
+                <label class="block text-xs font-semibold">FIRST NAME</label>
+                <input type="text" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3" placeholder="Enter First Name">
+
+                <label class="block text-xs font-semibold">LAST NAME</label>
+                <input type="text" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3" placeholder="Enter Last Name">
+
+                <label class="block text-xs font-semibold">EMAIL ADDRESS</label>
+                <input type="email" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3" placeholder="example@gmail.com">
+
+                <label class="block text-xs font-semibold">PHONE NUMBER</label>
+                <input type="tel" class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3" placeholder="+62 1234567890">
+
+                <label class="block text-xs font-semibold">COUNTRY</label>
+                <select class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3">
+                    <option>Please select</option>
+                </select>
+
+                <label class="block text-xs font-semibold">CONTACT HOURS</label>
+                <select class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 text-white mb-3">
+                    <option>Please select</option>
+                </select>
+
+                <button class="w-full bg-red-600 text-white font-bold py-2 rounded mt-3 transition-opacity hover:opacity-80">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

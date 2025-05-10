@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Tailwind</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .dot:nth-child(1) {
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        .dot:nth-child(2) {
+            animation: bounce 1.2s infinite ease-in-out 0.2s;
+        }
+
+        .dot:nth-child(3) {
+            animation: bounce 1.2s infinite ease-in-out 0.4s;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex space-x-2">
+        <div class="dot w-4 h-4 bg-blue-500 rounded-full"></div>
+        <div class="dot w-4 h-4 bg-blue-500 rounded-full"></div>
+        <div class="dot w-4 h-4 bg-blue-500 rounded-full"></div>
+    </div>
+
+
+</body>
+</html>
